@@ -2,13 +2,14 @@ import Header from "./components/Header";
 import { Container } from "react-bootstrap";
 import Footer from "./components/Footer";
 import "./App.css";
+import HomePage from "./pages/HomePage";
 const App = () => {
   return (
     <>
       <Header />
       <main className="py-3">
         <Container>
-          <h1>Welcome to Gold Ecom..</h1>
+          <HomePage />
         </Container>
       </main>
       <Footer />
