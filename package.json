@@ -1,0 +1,23 @@
+{
+  "name": "gold-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prajwal-Sharma09/gold-ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prajwal-Sharma09/gold-ecommerce/issues"
+  },
+  "homepage": "https://github.com/Prajwal-Sharma09/gold-ecommerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
