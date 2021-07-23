@@ -2,7 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 import colors from "colors";
 import connectDB from "./config/db.js";
-import proudcts from "./data/products.js";
+
+import productRoutes from "./routes/productRoutes.js";
 
 dotenv.config();
 
@@ -14,14 +15,7 @@ app.get("/", (req, res) => {
   res.json("api is running..");
 });
 
-app.get("/api/products", (req, res) => {
-  res.json(proudcts);
-});
-
-app.get("/api/products/:id", (req, res) => {
-  const data = proudcts.find((p) => p._id === req.params.id);
-  res.json(data);
-});
+app.use("/api/products", productRoutes);
 
 const PORT = process.env.PORT || 5000;
 
